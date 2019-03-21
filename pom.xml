@@ -264,46 +264,14 @@
     </plugins>
   </build>
 
-  <profiles>
-    <profile>
-      <id>base</id>
-      <activation>
-        <property>
-          <name>!skipDefault</name>
-        </property>
-      </activation>
-      <modules>
-        <module>engine-ext</module>
-        <module>core</module>
-        <module>engine</module>
-        <module>dbdialog</module>
-        <module>ui</module>
-      </modules>
-    </profile>
-    <profile>
-      <id>plugins</id>
-      <activation>
-        <property>
-          <name>!skipDefault</name>
-        </property>
-      </activation>
-      <modules>
-        <module>plugins</module>
-      </modules>
-    </profile>
-    <profile>
-      <id>assemblies</id>
-      <activation>
-        <property>
-          <name>!skipDefault</name>
-        </property>
-      </activation>
-      <modules>
-        <module>assemblies</module>
-      </modules>
-    </profile>
-  </profiles>
-
+  <modules>
+    <module>engine-ext</module>
+    <module>core</module>
+    <module>engine</module>
+    <module>dbdialog</module>
+    <module>ui</module>
+    <module>plugins</module>
+  </modules>
 
   <repositories>
     <repository>
